@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Background -->
+  <rect width="192" height="192" rx="36" fill="#0A192F"/>
+  
+  <!-- Shield body -->
+  <path
+    d="M96 24 L36 51 L36 90 C36 129 63 159 96 168 C129 159 156 129 156 90 L156 51 Z"
+    fill="none"
+    stroke="#00FFD1"
+    stroke-width="8"
+    stroke-linejoin="round"
+  />
+  
+  <!-- Pulse / heartbeat line -->
+  <polyline
+    points="48,102 72,102 81,78 96,126 111,66 120,102 144,102"
+    fill="none"
+    stroke="#00FFD1"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

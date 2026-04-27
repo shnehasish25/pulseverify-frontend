@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background: rounded square -->
+  <rect width="32" height="32" rx="6" fill="#0A192F"/>
+  
+  <!-- Shield body -->
+  <path
+    d="M16 4 L6 8.5 L6 15 C6 21.5 10.5 26.5 16 28 C21.5 26.5 26 21.5 26 15 L26 8.5 Z"
+    fill="none"
+    stroke="#00FFD1"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  
+  <!-- Pulse / heartbeat line through the shield -->
+  <polyline
+    points="8,17 12,17 13.5,13 16,21 18.5,11 20,17 24,17"
+    fill="none"
+    stroke="#00FFD1"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
