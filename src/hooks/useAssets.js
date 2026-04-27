@@ -57,7 +57,7 @@ export const useAssets = () => {
 
     setLoading(true);
     try {
-      const response = await axios.get('/api/assets');
+      const response = await axios.get('/assets');
       
       // Transform backend data to match frontend UI expectations
       const transformedAssets = response.data.map(asset => {
