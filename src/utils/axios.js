@@ -2,9 +2,12 @@ import axios from "axios";
 import { toast, Bounce } from "react-toastify";
 
 // ── Axios instance for all PulseVerify API calls ────────────────────────────
-// In production, set VITE_API_URL to the bare backend origin (e.g. https://pulseverify.onrender.com).
+// Backend mounts routes under /api/* so we append /api to the base URL.
+const rawUrl = import.meta.env.VITE_API_URL || "https://pulseverify.onrender.com";
+const BASE = rawUrl.endsWith('/') ? rawUrl.slice(0, -1) : rawUrl;
+
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://pulseverify.onrender.com",
+  baseURL: `${BASE}/api`,
   timeout: 15000,
   headers: {
     "Content-Type": "application/json",
