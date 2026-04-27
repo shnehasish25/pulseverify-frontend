@@ -58,7 +58,7 @@ export default function LoginPage() {
     localStorage.setItem("token", token);
     try {
       await axios.post(
-        "/auth/verify",
+        "/api/auth/verify",
         { email: user.email },
         { headers: { Authorization: `Bearer ${token}` } }
       );
