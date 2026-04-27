@@ -2,10 +2,10 @@ import axios from "axios";
 import { toast, Bounce } from "react-toastify";
 
 // ── Axios instance for all PulseVerify API calls ────────────────────────────
-// In development, Vite's proxy forwards /api/* → http://localhost:5000/api/*
-// so we leave baseURL empty (same-origin). In production, set VITE_API_BASE_URL.
+// Set VITE_API_URL in .env (dev) or Vercel environment variables (prod).
+// Example: VITE_API_URL=https://pulseverify.onrender.com
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://pulseverify.onrender.com/",
+  baseURL: import.meta.env.VITE_API_URL,
   timeout: 15000,
   headers: {
     "Content-Type": "application/json",
