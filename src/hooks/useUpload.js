@@ -9,7 +9,7 @@ export const useUpload = () => {
     setIsUploading(true);
     setError(null);
     try {
-      const response = await axios.post('/api/assets/upload', { imageUrl });
+      const response = await axios.post('/assets/upload', { imageUrl });
       setIsUploading(false);
       return response.data.asset;
     } catch (err) {

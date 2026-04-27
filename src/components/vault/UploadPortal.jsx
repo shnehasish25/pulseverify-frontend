@@ -42,7 +42,7 @@ export default function UploadPortal({ onClose, onUploaded }) {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await axios.post('/api/assets/upload', formData, {
+      const response = await axios.post('/assets/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         onUploadProgress: (e) => {
           if (e.total) {

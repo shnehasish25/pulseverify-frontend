@@ -17,7 +17,7 @@ export const useViolations = () => {
 
     setLoading(true);
     try {
-      const response = await axios.get('/api/violations');
+      const response = await axios.get('/violations');
       
       // Transform backend data to match frontend UI expectations
       const transformedViolations = response.data.map((v, index) => {
@@ -81,7 +81,7 @@ export const useViolations = () => {
 
   const detectViolation = async (suspectUrl, platform) => {
     try {
-      const response = await axios.post('/api/violations/detect', { suspectUrl, platform });
+      const response = await axios.post('/violations/detect', { suspectUrl, platform });
       return response.data;
     } catch (err) {
       throw err;

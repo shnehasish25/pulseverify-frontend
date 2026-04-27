@@ -4,8 +4,11 @@ import { toast, Bounce } from "react-toastify";
 // ── Axios instance for all PulseVerify API calls ────────────────────────────
 // Set VITE_API_URL in .env (dev) or Vercel environment variables (prod).
 // Example: VITE_API_URL=https://pulseverify.onrender.com
+const API = import.meta.env.VITE_API_URL;
+console.log("API BASE URL:", API);
+
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: API,
   timeout: 15000,
   headers: {
     "Content-Type": "application/json",
