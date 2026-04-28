@@ -1,0 +1,196 @@
+{
+  "assets": [
+    {
+      "url": "https://pulseverify.test/official/ipl-csk-mi-final.mp4",
+      "thumbnail": "/uploads/ipl_final.jpg",
+      "pHash": "01010101010101010101010101010101",
+      "uploaderId": "SEED_ADMIN",
+      "aiAnalysis": {
+        "isOfficial": true,
+        "confidence": 100,
+        "reasoning": "Official broadcast master file. Contains Tata IPL watermark, broadcast metadata, and original resolution markers.",
+        "labels": ["Cricket", "IPL", "Stadium", "Broadcast", "T20"],
+        "logos": ["Tata IPL", "Star Sports", "JioCinema"]
+      },
+      "status": "Verified",
+      "metadata": {
+        "format": "video/mp4",
+        "size": 15000000,
+        "league": "IPL",
+        "title": "IPL 2026 - CSK vs MI - Final Over",
+        "duration": "12:34",
+        "resolution": "1920x1080"
+      }
+    },
+    {
+      "url": "https://pulseverify.test/official/ind-pak-t20-wc.mp4",
+      "thumbnail": "/uploads/bcci_master.png",
+      "pHash": "10101010101010101010101010101010",
+      "uploaderId": "SEED_ADMIN",
+      "aiAnalysis": {
+        "isOfficial": true,
+        "confidence": 100,
+        "reasoning": "Official broadcast master file. BCCI logo detected, broadcast graphics match official overlay package.",
+        "labels": ["Cricket", "World Cup", "Stadium", "Player", "Highlights"],
+        "logos": ["BCCI", "Star Sports", "ICC"]
+      },
+      "status": "Verified",
+      "metadata": {
+        "format": "video/mp4",
+        "size": 25000000,
+        "league": "ICC T20 World Cup",
+        "title": "India vs Pakistan - T20 World Cup Highlights",
+        "duration": "48:22",
+        "resolution": "3840x2160"
+      }
+    },
+    {
+      "url": "https://pulseverify.test/official/isl-kolkata-derby.mp4",
+      "thumbnail": "/uploads/isl_derby.jpg",
+      "pHash": "11110000111100001111000011110000",
+      "uploaderId": "SEED_ADMIN",
+      "aiAnalysis": {
+        "isOfficial": true,
+        "confidence": 100,
+        "reasoning": "Official broadcast master file. ISL telemetry overlay and timing data match authorized broadcast feed.",
+        "labels": ["Football", "ISL", "Stadium", "Derby", "Soccer"],
+        "logos": ["ISL", "JioCinema"]
+      },
+      "status": "Verified",
+      "metadata": {
+        "format": "video/mp4",
+        "size": 12000000,
+        "league": "ISL",
+        "title": "ISL - Mohun Bagan vs East Bengal - Kolkata Derby",
+        "duration": "8:45",
+        "resolution": "1920x1080"
+      }
+    },
+    {
+      "url": "https://pulseverify.test/official/wpl-final-rcb-mi.mp4",
+      "thumbnail": "/uploads/wpl_final.jpg",
+      "pHash": "00001111000011110000111100001111",
+      "uploaderId": "SEED_ADMIN",
+      "aiAnalysis": {
+        "isOfficial": true,
+        "confidence": 100,
+        "reasoning": "Official broadcast master file. WPL branding, Hawkeye overlay data, and authorized commentary track present.",
+        "labels": ["Cricket", "WPL", "Women Sports", "Championship", "T20"],
+        "logos": ["WPL", "JioCinema", "BCCI"]
+      },
+      "status": "Verified",
+      "metadata": {
+        "format": "video/mp4",
+        "size": 18000000,
+        "league": "WPL",
+        "title": "WPL 2026 - Final - RCB vs MI",
+        "duration": "15:10",
+        "resolution": "1920x1080"
+      }
+    },
+    {
+      "url": "https://pulseverify.test/official/pkl-final.mp4",
+      "thumbnail": "/uploads/pkl_final.jpg",
+      "pHash": "11001100110011001100110011001100",
+      "uploaderId": "SEED_ADMIN",
+      "aiAnalysis": {
+        "isOfficial": true,
+        "confidence": 100,
+        "reasoning": "Official broadcast master file. PKL logo verified, Star Sports broadcast graphics match authorized package.",
+        "labels": ["Kabaddi", "PKL", "Finals", "Stadium", "Championship"],
+        "logos": ["Pro Kabaddi League", "Star Sports"]
+      },
+      "status": "Verified",
+      "metadata": {
+        "format": "video/mp4",
+        "size": 35000000,
+        "league": "PKL",
+        "title": "Pro Kabaddi League - Final Match",
+        "duration": "3:22:00",
+        "resolution": "3840x2160"
+      }
+    }
+  ],
+  "violations": [
+    {
+      "suspectUrl": "https://t.me/mockstream/405",
+      "pHashDistance": 2,
+      "confidence": 98.5,
+      "status": "Open",
+      "platform": "Telegram",
+      "aiContext": "Near-identical match to IPL 2026 Final master asset. Matched official Star Sports watermark despite bottom-right crop. Detected on a Telegram channel originating from Mumbai.",
+      "modifications": ["15% crop applied", "Audio re-encoding", "Minor compression"],
+      "matchedLogos": ["Tata IPL watermark visible", "Star Sports bug detected"],
+      "coordinates": [72.8777, 19.0760],
+      "country": "India",
+      "city": "Mumbai",
+      "detectedVia": "Automated pHash scan",
+      "estimatedReach": "2.4M views",
+      "uploaderProfile": "Telegram channel with 850K members, known piracy hub"
+    },
+    {
+      "suspectUrl": "https://illegal-sports-stream.tv/ind-pak",
+      "pHashDistance": 4,
+      "confidence": 95.2,
+      "status": "Under Review",
+      "platform": "Web Stream",
+      "aiContext": "Matches official BCCI master feed for India vs Pakistan T20 World Cup. Custom watermark 'LIVE CRICKET HD' overlaid at top. Detected on an illegal streaming site with a server IP in Bangalore.",
+      "modifications": ["Resolution downscaled", "Custom watermark overlay", "Aspect ratio changed"],
+      "matchedLogos": ["BCCI logo partially visible", "Star Sports scoreboard detected"],
+      "coordinates": [77.5946, 12.9716],
+      "country": "India",
+      "city": "Bangalore",
+      "detectedVia": "Community Shield report + pHash verification",
+      "estimatedReach": "1.2M viewers",
+      "uploaderProfile": "Illegal streaming domain registered in Bangalore, repeat offender"
+    },
+    {
+      "suspectUrl": "https://facebook.com/watch/?v=delhistream",
+      "pHashDistance": 8,
+      "confidence": 88.0,
+      "status": "Takedown Issued",
+      "platform": "Facebook",
+      "aiContext": "ISL Kolkata Derby footage converted to 9:16 vertical format for social media. Detected on a social media 're-stream' located in Delhi. This is a systematic re-upload pattern from this account.",
+      "modifications": ["Vertical crop (16:9 → 9:16)", "Speed adjusted 1.1x", "Background music added"],
+      "matchedLogos": ["ISL timing overlay partially visible"],
+      "coordinates": [77.1025, 28.7041],
+      "country": "India",
+      "city": "Delhi",
+      "detectedVia": "Real-time stream monitoring",
+      "estimatedReach": "1.2M views",
+      "uploaderProfile": "Facebook page 'Delhi Football Fanatics', 500K followers, 7 previous takedowns"
+    },
+    {
+      "suspectUrl": "https://instagram.com/p/wplmockpost",
+      "pHashDistance": 12,
+      "confidence": 82.1,
+      "status": "Resolved",
+      "platform": "Instagram",
+      "aiContext": "WPL Final image flipped horizontally and heavy color filter applied. Despite modifications, player faces and WPL branding on kit sponsors are still identifiable. Post was used to promote unauthorized merchandise.",
+      "modifications": ["Horizontal flip", "Sepia color filter", "Resolution downscaled", "Text overlay added"],
+      "matchedLogos": ["WPL branding on player kit", "JioCinema sponsor board in background"],
+      "coordinates": [78.4867, 17.3850],
+      "country": "India",
+      "city": "Hyderabad",
+      "detectedVia": "Web scraping + logo detection",
+      "estimatedReach": "340K impressions",
+      "uploaderProfile": "Instagram shop selling unauthorized WPL merchandise"
+    },
+    {
+      "suspectUrl": "https://x.com/mockuser/status/pklmock7",
+      "pHashDistance": 5,
+      "confidence": 94.8,
+      "status": "Open",
+      "platform": "Twitter/X",
+      "aiContext": "Direct stream rip of PKL Final broadcast. Identical frame sequence found at master asset timestamp. PKL logo present in every frame. Star Sports broadcast graphics fully intact. This is an unmodified, high-quality pirate copy.",
+      "modifications": ["None — unmodified stream rip"],
+      "matchedLogos": ["Pro Kabaddi League (100% match)", "Star Sports broadcast overlay"],
+      "coordinates": [80.2707, 13.0827],
+      "country": "India",
+      "city": "Chennai",
+      "detectedVia": "Automated pHash scan",
+      "estimatedReach": "5.1M views",
+      "uploaderProfile": "@SportsClipsIN, 120K followers, 2 prior violations"
+    }
+  ]
+}
