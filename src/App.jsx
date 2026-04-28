@@ -9,6 +9,7 @@ import EvidenceBoardPage from "./pages/EvidenceBoardPage";
 import DetectionPage from "./pages/DetectionPage";
 import CommunityShieldPage from "./pages/CommunityShieldPage";
 
+// cache fix
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950 font-[Lexend,sans-serif] text-white">
